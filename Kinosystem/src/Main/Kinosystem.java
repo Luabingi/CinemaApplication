@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package javaapplication22;
+package Main;
 
 /**
  *
  * @author luab
  */
-public class JavaApplication22 {
+public class Kinosystem {
 
   /**
      * @param args the command line arguments
