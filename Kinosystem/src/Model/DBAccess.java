@@ -2,6 +2,7 @@ package Model;
 
 import java.sql.Connection;
 import java.sql.*;
+import javax.json.JsonArray;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -36,7 +37,8 @@ public class DBAccess {
             String sql = "select * from " + tableName; 
             ResultSet rs = stat.executeQuery(sql);
             
-            System.out.println(json.toString());
+            JsonArray ergebnis = JsonHandler.resultSetToJson(rs);
+            System.out.println(ergebnis.toString());
             rs.close(); 
             conn.close(); 
         } catch (Exception e) { 

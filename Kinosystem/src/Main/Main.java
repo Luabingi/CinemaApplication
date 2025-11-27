@@ -4,6 +4,8 @@
  */
 package Main;
 
+import Model.DBAccess;
+
 /**
  *
  * @author luab
@@ -14,6 +16,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        DBAccess db = DBAccess.getInstance();
+        db.getTable("Film");
     }
 }
